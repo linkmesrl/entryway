@@ -3,6 +3,7 @@ auth_key
 
 if [ ! -d "/src/package.json" ]
 then
+  rm -rf /src/*
   echo "cloning git repo"
   git clone $REPO .
 fi
