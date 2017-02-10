@@ -1,0 +1,22 @@
+{
+  "name": "entryway",
+  "description": "Simple startup scripts for dockerized node services. Also the first level in Doom",
+  "version": "0.0.1",
+  "author": "giovanni lela <giovanni.lela@gmail.com>",
+  "keywords": [
+    "node",
+    "startup",
+    "key"
+  ],
+  "bin": {
+    "auth_key": "./bin/auth_key"
+  },
+  "preferGlobal": true,
+  "os": [
+    "!win32"
+  ],
+  "engines": {
+    "node": "*"
+  },
+  "license": "MIT"
+}

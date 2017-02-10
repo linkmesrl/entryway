@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo "checking auth key"
+if [ ! -e "/root/.ssh/id_rsa" ]; then
+
+  echo "key not found, importing from /root/ssh"
+
+  if [ ! -e "/root/ssh/id_rsa" ]; then
+      echo "no key found in /root/ssh"
+      exit 1
+  fi
+  mkdir -p /root/.ssh
+  cp -r /root/ssh/* /root/.ssh
+  chown root:root ~/.ssh/*
+  chmod 400 ~/.ssh/*
+fi
