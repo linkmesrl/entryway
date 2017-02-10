@@ -1,5 +1,7 @@
 # Entryway
 
+Simple startup scripts for dockerized node services. Also the first level in Doom
+
 Once installed this module exposes two  global commands:
 
 ## Auth key:
