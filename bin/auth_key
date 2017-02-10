@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+mkdir -p /root/.ssh
 echo "checking auth key"
 if [ ! -e "/root/.ssh/id_rsa" ]; then
 
